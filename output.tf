@@ -22,3 +22,6 @@ output "aws_key_pair" {
   value = aws_key_pair.vm_ssh_key.key_name
 }
 
+output "my_sg" {
+  value = aws_security_group.allow_tls.id
+}
